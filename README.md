@@ -15,10 +15,9 @@ System under test: **Swag Labs e-commerce practice site — https://www.saucedem
 | Member name | GitHub username | Role |
 |---|---|---|
 | Monir Skik | `<github-username>` | Test lead — scenario design, triage chair |
-| Abdulazez Debs | `Abdulazezthepro` | Tester — repository owner, E2E automation (Playwright) |
+| Abdulazez Debs | `Abdulazezthepro` | Tester — repository owner |
 | Khalil | `<github-username>` | Tester — peer review, developer role in the lifecycle simulation |
 
-Instructor: `<instructor-github-username>` (to be invited under **Settings → Collaborators**).
 
 ## How this repository is organised
 
