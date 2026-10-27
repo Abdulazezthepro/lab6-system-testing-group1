@@ -1,0 +1,99 @@
+name: Bug report
+description: Report a defect found during system testing (INFS4202 - Lab 6)
+title: "[Bug]: "
+labels: ["bug", "status: new"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Write for a stranger:** someone outside your group must be able to reproduce this bug from this report alone.
+        Keep the tone neutral and factual. After submitting, add the severity / priority / type labels and an assignee.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is wrong, and why is it a problem?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Exact actions and test data, one step per line.
+      value: |
+        1. Go to ...
+        2. ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: What should happen (cite the requirement or common user expectation).
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: What actually happens.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity (impact)
+      options:
+        - High - blocks core functionality or the whole app
+        - Medium - a feature is broken but a workaround exists
+        - Low - cosmetic issue or enhancement
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority (urgency)
+      options:
+        - P1 - fix immediately, cannot release
+        - P2 - fix soon, should not release
+        - P3 - can release with the defect
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Functional
+        - Usability
+        - Compatibility (browser / device)
+        - Performance
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: Reproducibility
+      options:
+        - Always
+        - Sometimes (intermittent)
+        - Happened once
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Browser and version, operating system.
+      placeholder: "e.g., Edge 141 / Windows 11"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshot / evidence
+      description: Drag and drop screenshots here (or a Playwright report screenshot / trace.zip for the bonus).
+    validations:
+      required: true
